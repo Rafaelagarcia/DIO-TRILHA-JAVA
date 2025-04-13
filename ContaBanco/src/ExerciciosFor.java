@@ -4,8 +4,7 @@ public class ExerciciosFor {
 
     public static void contagemDeNumeros() {
 
-
-        //o For é melhor em situações onde as voltas são determinadas
+        // o For é melhor em situações onde as voltas são determinadas
         // RETORNA OS NÚMEROS DE 1 A 10
         for (int x = 1; x <= 10; x++) {
             System.out.println(x);
@@ -31,14 +30,10 @@ public class ExerciciosFor {
         int numero1 = 0;
         for (int x = numero1; x <= 100; x++) {
             numero1++;
-            if (numero1 % 2 == 0) {
-                System.out.println(numero1 + " é Par");
-            } else {
-                System.out.println(numero1 + " é impar.");
-            }
-
+            String resultado = (numero1 % 2 == 0 ? numero1 + " é Par" : numero1 + " é impar.");
+            System.out.println(resultado);
         }
-        
+
         // Peça um número ao usuário e imprima a tabuada dele de 1 a 10.
         Scanner inputScanner = new Scanner(System.in);
         System.out.println("Digite um número: ");
@@ -51,6 +46,13 @@ public class ExerciciosFor {
         }
 
         inputScanner.close();
+
+        // for(comeca; ate quanto; incrementação;)
+
+        for (int carneirinhos = 1; carneirinhos <= 20; carneirinhos++) {
+
+            System.out.println("Contando carneirinhos: " + carneirinhos);
+        }
 
     }
 
